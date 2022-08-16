@@ -1,0 +1,63 @@
+.join {
+  display: flex;
+  padding: 0 2rem;
+  gap: 10rem;
+}
+.join-left {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.join-left > hr {
+  position: absolute;
+  width: 10.5rem;
+  border: 2px solid var(--orange);
+  border-radius: 20%;
+  margin: -10px 0;
+}
+.join-left > div {
+  display: flex;
+  gap: 1rem;
+}
+/* -----------------------------------Right Side------------ */
+.join-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.email-container {
+  display: flex;
+  gap: 3rem;
+  background-color: gray;
+  padding: 1rem 2rem;
+}
+.email-container > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--lightgray);
+}
+::placeholder {
+  color: var(--lightgray);
+}
+.btn-j {
+  background-color: var(--orange);
+  color: white;
+}
+/* -----------------------Media-------------------------------------- */
+@media screen and (max-width: 768px) {
+  .join {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .join-left {
+    font-size: xx-large;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .join-right {
+    padding: 2rem;
+  }
+}
