@@ -45,6 +45,7 @@
 .btn-j {
   background-color: var(--orange);
   color: white;
+  width: 6rem;
 }
 /* -----------------------Media-------------------------------------- */
 @media screen and (max-width: 768px) {
@@ -59,5 +60,10 @@
   }
   .join-right {
     padding: 2rem;
+  }
+  .btn-j {
+    width: 6rem;
+    position: relative;
+    right: -1rem;
   }
 }
